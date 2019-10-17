@@ -19,26 +19,26 @@ function App() {
     <div className="App">
       <Router>
         <nav>
-          <ul>
-            <li onClick={() => setPage(0)}>
+          <ul id="navigation">
+            <li className="navLi" onClick={() => setPage(0)}>
               <Link to="/about-me">About Me</Link>
             </li>
-            <li onClick={() => setPage(1)}>
+            <li className="navLi" onClick={() => setPage(1)}>
               <Link to="/contact">Contact Me</Link>
             </li>
-            <li onClick={() => setPage(2)}>
+            <li className="navLi" onClick={() => setPage(2)}>
               <Link to="/abalone">Abalone</Link>
             </li>
-            <li onClick={() => setPage(3)}>
+            <li className="navLi" onClick={() => setPage(3)}>
               <Link to="/connectfour">Connectfour</Link>
             </li>
-            <li onClick={() => setPage(4)}>
+            <li className="navLi" onClick={() => setPage(4)}>
               <Link to="/petition">Petition</Link>
             </li>
-            <li onClick={() => setPage(5)}>
+            <li className="navLi" onClick={() => setPage(5)}>
               <Link to="/socialnetwork">Social Network</Link>
             </li>
-            <li onClick={() => setPage(6)}>
+            <li className="navLi" onClick={() => setPage(6)}>
               <Link to="/imageboard">Imageboard</Link>
             </li>
           </ul>
