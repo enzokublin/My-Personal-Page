@@ -2,27 +2,27 @@ import React from 'react';
 import { Gallery, GalleryImage } from "react-gesture-gallery";
 import './App.css';
 
-
-
-// export class Abalone extends React.Component {
-
-
-
-//     render() {
-//         return (
-//             <div className="abalone" >
-
-//                 <h1 id="h1Abalone">Abalone</h1>
-
-
-//             </div>
-//         );
-//     }
-// } 
+const INITIAL_INDEX = 0;
 
 export function Abalone() {
 
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = React.useState(INITIAL_INDEX);
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+
+            if (index === abaloneImages.length - 1) {
+                setIndex(INITIAL_INDEX)
+            }
+            else {
+
+                setIndex(index + 1)
+            }
+        }, 3000)
+
+        return () => clearInterval(interval)
+
+    }, [index])
 
     const abaloneImages = [
         {

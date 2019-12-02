@@ -193,9 +193,9 @@ export class PrintCv extends React.Component {
                         </div>
                         <div className="ngoBox">
                             <ul className="ngoBoxUl2">
-                                <li className="ngoBoxLi2">Mitglied von Bündnis 90 / Die Grünen &#45; Seit März 2001</li>
-                                <li className="ngoBoxLi2">Mitglied vom Bund für Umwelt und Naturschutz Deutschland &#40;BUND &#41; &#45; Seit März 2001</li>
-                                <li className="ngoBoxLi2">Mitglied der Gesellschaft zur Förderung der grenzüberschreitenden Zusammenarbeit &#40;GFGZ &#41; &#45; Seit Mai 2017</li>
+                                <li className="ngoBoxLi2"> Mitglied von Bündnis 90 / Die Grünen &#45; Seit März 2001</li>
+                                <li className="ngoBoxLi2"> Mitglied des Bundes für Umwelt und Naturschutz Deutschlands &#40;BUND &#41; <br /> &#45; Seit März 2001</li>
+                                <li className="ngoBoxLi2"> Mitglied der Gesellschaft zur Förderung der grenzüberschreitenden Zusammenarbeit &#40;GFGZ &#41; &#45; Seit Mai 2017</li>
                             </ul>
                         </div>
                     </div>

@@ -20,19 +20,21 @@ export class Contact extends React.Component {
 
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value });
+        console.log(this.state);
+
     }
 
 
     handleSubmit(e) {
         alert('A value is submitted ' + this.state.firstName);
-        e.preventDefault();
+        // e.preventDefault();
     }
 
     render() {
         return (
             <div className="contact">
                 <h1 className="h1Contact"> Send Me A Message</h1>
-                <form className="contactForm" action="mailto:enzokublin@gmail.com" onSubmit={this.handleSubmit}>
+                <form className="contactForm" method="GET" action="mailto:enzokublin@gmail.com" onSubmit={this.handleSubmit}>
                     <label className="contactLabel">
                         <div className="inputContainer">
                             <input type="text" name="firstname" id="firstname" placeholder="Prename" required onChange={this.handleChange} />
@@ -41,10 +43,10 @@ export class Contact extends React.Component {
                             <input type="text" name="lastname" id="lastname" placeholder="Surname" required onChange={this.handleChange} />
                         </div>
                         <div className="inputContainer">
-                            <input type="email" name="e-mail" id="email" size="30" placeholder="E-Mail" required onChange={this.handleChange} />
+                            <input type="text" name="subject" id="subject" size="30" placeholder="Subject" required onChange={this.handleChange} />
                         </div>
                     </label>
-                    <textarea id="emailText" name="emailText" rows="6" cols="10" placeholder="Please write here!" onChange={this.handleChange}></textarea>
+                    <textarea id="emailText" name="body" rows="6" cols="10" placeholder="Please write here!" onChange={this.handleChange}></textarea>
                     <input type="submit" value="Submit" id="submitButton" />
                 </form>
 
