@@ -2,7 +2,7 @@ import React from 'react';
 import { CarouselItem } from './carouselItem';
 import imagesConnect4 from './imgConnect4';
 import './App.css';
-import { tsConstructSignatureDeclaration } from '@babel/types';
+
 
 
 

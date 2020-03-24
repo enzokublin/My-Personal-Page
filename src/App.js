@@ -7,6 +7,7 @@ import { Socialnetwork } from './socialnetwork';
 import { Petition } from './petition';
 import { Connectfour } from './connectfour';
 import { AboutMe } from './aboutMe';
+import { EnzosBlog } from './enzosblog';
 
 import './App.css';
 
@@ -40,6 +41,9 @@ function App() {
             </li>
             <li className="navLi" onClick={() => setPage(6)}>
               <Link to="/imageboard">Imageboard</Link>
+            </li>
+            <li className="navLi" onClick={() => setPage(7)}>
+              <Link to="/enzosblog">EMK Blog</Link>
             </li>
           </ul>
         </nav>
@@ -85,6 +89,12 @@ function App() {
             <Route path="/imageboard">
               {(page === 6) &&
                 <Imageboard className="component-box" />
+              }
+            </Route>
+
+            <Route path="/enzosblog">
+              {(page === 7) &&
+                <EnzosBlog className="component-box" />
               }
             </Route>
           </main>

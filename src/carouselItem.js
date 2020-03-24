@@ -12,7 +12,7 @@ export function CarouselItem(props) {
     return (
 
         <div className="carouselItem" style={backgroundItem}>
-            <img />
+            <img alt="" />
         </div>
     )
 }

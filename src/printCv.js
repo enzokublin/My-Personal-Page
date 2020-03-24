@@ -7,7 +7,7 @@ export class PrintCv extends React.Component {
 
             <div id="primaryContainer">
                 <div id="leftBox">
-                    <img src="./img/emk.jpg" alt="personal-picture" id="personalImg" />
+                    <img src="./img/emk.jpg" alt="personal" id="personalImg" />
                     <h2>Enzo Matthias Kublin</h2>
                     <p>Full Stack Web Developer</p>
                     <p>Projektmanager &#40;Level D&#41; - IPMA/ GPM</p>
